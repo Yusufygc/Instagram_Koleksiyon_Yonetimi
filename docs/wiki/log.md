@@ -4,6 +4,10 @@ Bu dosya, projede gerçekleştirilen mimari kararların, özellik eklemelerinin,
 
 ---
 
+## [2026-09-25] DOCS | Kapsamlı proje tanıtım ve kurulum kılavuzu (README.md) eklendi
+- Proje genel bakışı, öne çıkan özellikler, teknoloji yığını ve mimari özetlendi.
+- Geliştirici kurulumu, PyInstaller ve Inno Setup derleme adımları ile güvenlik ilkeleri belgelendi.
+
 ## [2026-09-24] FIX | QColor tanımsızlık hatası ve FFmpeg tanı logları giderildi
 - PreviewDialog.qml içinde Theme.primaryColor yerine Theme.primary kullanılarak QColor hatası çözüldü.
 - main.py içinde QT_LOGGING_RULES ve QLoggingCategory filtre kuralları genişletilerek video akışı kapatılırken basılan aac ve tls uyarıları susturuldu.
