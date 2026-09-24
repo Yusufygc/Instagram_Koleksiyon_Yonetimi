@@ -4,6 +4,10 @@ Bu dosya, projede gerçekleştirilen mimari kararların, özellik eklemelerinin,
 
 ---
 
+## [2026-09-25] FIX | Oturum dosyasının kullanıcı yerel veri dizinine (LOCALAPPDATA) taşınması
+- SessionStore sınıfı güncellenerek session.json dosya konumu Program Files yerine %LOCALAPPDATA%\InstagramKoleksiyonYoneticisi\ altına alındı.
+- Kurulum sihirbazı sonrasında oluşan [Errno 13] Permission denied yazma izin hatası tamamen giderildi.
+
 ## [2026-09-25] DOCS | Kapsamlı proje tanıtım ve kurulum kılavuzu (README.md) eklendi
 - Proje genel bakışı, öne çıkan özellikler, teknoloji yığını ve mimari özetlendi.
 - Geliştirici kurulumu, PyInstaller ve Inno Setup derleme adımları ile güvenlik ilkeleri belgelendi.
