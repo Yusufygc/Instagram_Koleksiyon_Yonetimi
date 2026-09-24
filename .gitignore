@@ -71,7 +71,9 @@ logs/
 htmlcov/
 .tox/
 
-# --- Dağıtım / Paketleme ---
+# --- Dağıtım / Paketleme (PyInstaller & Inno Setup) ---
 *.spec
 build/
 dist/
+installer_output/
+Output/
