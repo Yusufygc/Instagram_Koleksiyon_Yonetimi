@@ -49,8 +49,9 @@ Instagram özel API ve GraphQL uç noktalarıyla etkileşime girer:
 * Güvenli anahtarlık erişilemezse güvenli bir geri çekilme (fallback) sağlar.
 
 ### 2.4. `SessionStore` (`backend/session_store.py`)
-* `instagrapi` istemcisinin oturum durumunu, çerezlerini ve cihaz profillerini `session.json` dosyasına döker ve buradan yükler.
-* Oturum dosyasının yalnızca yerel kullanıcı tarafından okunabilmesi için izinleri (`stat.S_IRUSR | stat.S_IWUSR`) kısıtlar.
+* `instagrapi` istemcisinin oturum durumunu, çerezlerini ve cihaz profillerini `%LOCALAPPDATA%\InstagramKoleksiyonYoneticisi\session.json` dosyasına döker ve buradan yükler.
+* Dosyayı `Program Files` yerine kullanıcının yerel veri dizininde barındırarak Windows yazma izni kısıtlamalarını önler.
+* Oturum dosyasının yalnızca yerel kullanıcı tarafından okunabilmesi için dosya izinlerini (`stat.S_IRUSR | stat.S_IWUSR`) kısıtlar.
 
 ---
 
